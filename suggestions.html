@@ -9,29 +9,33 @@
 <style>
     body {
         margin: 0px;
+        display: flex;
+        justify-content: center;
     }
     .suggestions {
         display: flex;
         justify-content: center;
+        flex-direction: column;
         margin-right: 50px;
+        border: 2px solid black;
     }
-    .suggestions-you {
+    .perfil {
         display: flex;
         justify-content: space-between;
-        border: 2px solid #cccc;
+        /* border: 2px solid #cccc; */
         height: 56px;
         width: 293px;
     }
     .fotoYNombre {
         display: flex;
     }
-    .suggestions-you img {
+    .perfil img {
         border-radius: 50%;
         cursor: pointer;
         width: 56px;
         height: 56px;
     } 
-    .suggestions-you ul {
+    .perfil ul {
         list-style: none;
         padding-left: 15px;
         margin: 0px;
@@ -54,12 +58,72 @@
         color: rgb(0, 195, 255);
         cursor: pointer;
     }
+
+    .seeAll {
+        display: flex;
+        justify-content: space-between;
+    }
+    .seeAll-sfy {
+        color: grey;
+        font-weight: 600;
+    }
+    .seeAll-see {
+        cursor: pointer;
+        font-size: 14px;
+    }
+
     
+    .people {
+        display: flex;
+        justify-content: space-between;
+        /* border: 2px solid #cccc; */
+        height: 32px;
+        width: 289px;
+        padding: 5px 0px 5px 16px; 
+    }
+    .people-fotoYNombre {
+        display: flex;
+    }
+    .people img {
+        border-radius: 50%;
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+    } 
+    .people ul {
+        list-style: none;
+        padding-left: 15px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .people-userName {
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    .people-userName:hover {
+        text-decoration: underline;
+    }
+    .people-name {
+        color: grey;
+        font-size: 14px;
+    }
+    .follow {
+        display: flex;
+        justify-content: flex-end;
+        color: rgb(0, 195, 255);
+        cursor: pointer;
+    }
+    .follow p {
+        font-size: 14px;
+    }
 
 </style>
 <body>
     <section class="suggestions">
-        <div class="suggestions-you">
+        <div class="perfil">
             <div class="fotoYNombre">
                 <img src="./imagenPerfil/tesla.png" alt="">
                 <ul>
@@ -70,14 +134,95 @@
 
             <div class="switch">
                 <p>Switch</p>
-            </div>
-                        
+            </div>     
+            
+        </div>
+            
+        <div class="seeAll">
+            <p class="seeAll-sfy">Suggestions For You</p>
+            <p class="seeAll-see">See All</p>
         </div>
 
-        
+        <div>
+            <div class="people">
+                <div class="people-fotoYNombre">
+                    <img src="./imagenPerfil/persona.png" alt="">
+                    <ul>
+                        <li class="people-userName">josegomez</li>
+                        <li class="people-name">New to instragram</li>
+                    </ul>
+                </div>
+    
+                <div class="follow">
+                    <p>Follow</p>
+                </div>     
+                
+            </div>
 
-        
-        
+            <div class="people">
+                <div class="people-fotoYNombre">
+                    <img src="./imagenPerfil/cr7.png" alt="">
+                    <ul>
+                        <li class="people-userName">cristiano</li>
+                        <li class="people-name">New to instragram</li>
+                    </ul>
+                </div>
+    
+                <div class="follow">
+                    <p>Follow</p>
+                </div>     
+                
+            </div>
+
+            <div class="people">
+                <div class="people-fotoYNombre">
+                    <img src="./imagenPerfil/ibai.png" alt="">
+                    <ul>
+                        <li class="people-userName">ibai</li>
+                        <li class="people-name">followed by alex</li>
+                    </ul>
+                </div>
+    
+                <div class="follow">
+                    <p>Follow</p>
+                </div>     
+                
+            </div>
+
+            <div class="people">
+                <div class="people-fotoYNombre">
+                    <img src="./imagenPerfil/musk.png" alt="">
+                    <ul>
+                        <li class="people-userName">elon.musk</li>
+                        <li class="people-name">Instagram recommended</li>
+                    </ul>
+                </div>
+    
+                <div class="follow">
+                    <p>Follow</p>
+                </div>     
+                
+            </div>
+
+            <div class="people">
+                <div class="people-fotoYNombre">
+                    <img src="./imagenPerfil/shakira.png" alt="">
+                    <ul>
+                        <li class="people-userName">shakira</li>
+                        <li class="people-name">Instagram recommended</li>
+                    </ul>
+                </div>
+    
+                <div class="follow">
+                    <p>Follow</p>
+                </div>     
+                
+            </div>
+  
+                
+
+        </div>
+
     </section>
 
     
