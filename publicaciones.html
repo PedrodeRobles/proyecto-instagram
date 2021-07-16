@@ -12,10 +12,14 @@
         display: flex;
         justify-content: center;
     }
+    .publicacion {
+        border: 1px solid #cccc;
+        border-radius: 3px;
+        margin-bottom: 24px;
+    }
     .publicacion__header-people {
         display: flex;
         justify-content: space-between;
-        border: 2px solid #cccc;
         width: 582px;
         height: 27px;
         padding: 16px;
@@ -55,29 +59,346 @@
         width: 618px;
         height: 480px;
     }
+    .publicacion__opciones {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 16px;
+        margin-top: 4px;
+    }
+    .opcionesIzquiera img {
+        padding: 6px;
+        cursor: pointer;
+    }
+    .opcionDerecha img {
+        cursor: pointer;
+    }
+    .publicacion__likes span {
+        width: 568;
+        height: 17;
+        font-weight: 600;
+        padding: 0px 16px;
+        cursor: pointer;
+    }
+    .publicacion__comentarios {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 16px;
+    }
+    .comentarioDelAutor {
+        display: flex;
+    }
+    .comentarioDelAutor-user {
+        color: black;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .comentarioDelAutor span {
+        padding-left: 5px;
+    }
+    .comentarioDelAutor-user:hover {
+        text-decoration: underline;
+    }
+    .comentarioDelAutor-view {
+        color: grey;
+        text-decoration: none;
+    }
+    .comentarioDeUsuarios {
+        display: flex;
+        flex-direction: column;
+    }
+    .comentarioDeUsuarios a {
+        color: black;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .comentarioDeUsuarios a:hover {
+        text-decoration: underline;
+    }
+    .publicacion__time a {
+        font-size: 10px;
+        color: grey;
+        text-decoration: none;
+        padding-left: 16px;
+    }
+    .publicacion__footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 16px;
+        margin: 6px 0px;
+        border-top: 1px solid #cccc;
+
+    }
+    .publicacion__footer img {
+        padding: 8px 16px 8px 0px;
+    }
+    .publicacion__footer input {
+        width: 100%;
+        border: none;
+        outline: none;
+    }
+    .publicacion__footer a {
+        text-decoration: none;
+        color: rgb(0, 204, 255);
+    }
+
 
 </style>
 <body>
-    <div class="publicacion">
-        <div class="publicacion__header">
-            <div class="publicacion__header-people">
-                <div class="people-foto">
-                    <img src="./imagenPerfil/ibai.png" alt=""> 
+    <div class="publicaciones">
+        <div class="publicacion">
+            <div class="publicacion__header">
+                <div class="publicacion__header-people">
+                    <div class="people-foto">
+                        <img src="./imagenPerfil/ibai.png" alt=""> 
+                    </div>
+        
+                    <div class="publicacion__header-opcion">
+                        <a>Ibai</a>
+                        <img src="./imagenesPublicacion/puntos.png" alt="">
+                    </div>   
+            </div>
+    
+            <div class="publicacion__img">
+                <img src="./imagenesPublicacion/publicacion.png" alt="">
+            </div>
+    
+            <div class="publicacion__opciones">
+                <div class="opcionesIzquiera">
+                    <img src="./imagenesPublicacion/corazon.png" alt="">
+                    <img src="./imagenesPublicacion/comentario.png" alt="">
+                    <img src="./imagenesPublicacion/mensajes.png" alt="">
+                </div>
+                <div class="opcionDerecha">
+                    <img src="./imagenesPublicacion/guardar.png" alt="">
+                </div>
+            </div>
+    
+            <div class="publicacion__likes"><span>500 likes</span></div>
+    
+            <div class="publicacion__comentarios">
+                <div class="comentarioDelAutor">
+                    <a class="comentarioDelAutor-user" href="">asdadas</a>
+                    <span>hola sii hola</span>
                 </div>
     
-                <div class="publicacion__header-opcion">
-                    <a>Ibai</a>
-                    <img src="./imagenesPublicacion/puntos.png" alt="">
-                </div>   
+                <a class="comentarioDelAutor-view" href="">View all 20 comments</a>
+    
+                <div class="comentarioDeUsuarios">
+                    <div>
+                        <a href="">usuario1</a>
+                        <span>soy un comentario </span>
+                    </div>
+    
+                    <div>
+                        <a href="">usuario2</a>
+                        <span>otro comentario </span>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="publicacion__time">
+                <a href="">3 HOURS AGO</a>
+            </div>
+    
+            <div class="publicacion__footer">
+                <img src="./imagenesPublicacion/carita.png" alt="">
+                <input type="text" placeholder="Add a comment...">
+                <a href="">Post</a>
+            </div>
+            </div>
         </div>
 
-        <div class="publicacion__img"><img src="./imagenesPublicacion/publicacion.png" alt=""></div>
+        <div class="publicacion">
+            <div class="publicacion__header">
+                <div class="publicacion__header-people">
+                    <div class="people-foto">
+                        <img src="./imagenPerfil/ibai.png" alt=""> 
+                    </div>
+        
+                    <div class="publicacion__header-opcion">
+                        <a>Ibai</a>
+                        <img src="./imagenesPublicacion/puntos.png" alt="">
+                    </div>   
+            </div>
+    
+            <div class="publicacion__img">
+                <img src="./imagenesPublicacion/publicacion.png" alt="">
+            </div>
+    
+            <div class="publicacion__opciones">
+                <div class="opcionesIzquiera">
+                    <img src="./imagenesPublicacion/corazon.png" alt="">
+                    <img src="./imagenesPublicacion/comentario.png" alt="">
+                    <img src="./imagenesPublicacion/mensajes.png" alt="">
+                </div>
+                <div class="opcionDerecha">
+                    <img src="./imagenesPublicacion/guardar.png" alt="">
+                </div>
+            </div>
+    
+            <div class="publicacion__likes"><span>500 likes</span></div>
+    
+            <div class="publicacion__comentarios">
+                <div class="comentarioDelAutor">
+                    <a class="comentarioDelAutor-user" href="">asdadas</a>
+                    <span>hola sii hola</span>
+                </div>
+    
+                <a class="comentarioDelAutor-view" href="">View all 20 comments</a>
+    
+                <div class="comentarioDeUsuarios">
+                    <div>
+                        <a href="">usuario1</a>
+                        <span>soy un comentario </span>
+                    </div>
+    
+                    <div>
+                        <a href="">usuario2</a>
+                        <span>otro comentario </span>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="publicacion__time">
+                <a href="">3 HOURS AGO</a>
+            </div>
+    
+            <div class="publicacion__footer">
+                <img src="./imagenesPublicacion/carita.png" alt="">
+                <input type="text" placeholder="Add a comment...">
+                <a href="">Post</a>
+            </div>
+            </div>
+        </div>
 
-        <div class="publicacion__opciones"></div>
-        <div class="publicacion__likes"></div>
-        <div class="publicacion__comentarios"></div>
-        <div class="publicacion__time"></div>
-        <div class="publicacion__footer"></div>
+        <div class="publicacion">
+            <div class="publicacion__header">
+                <div class="publicacion__header-people">
+                    <div class="people-foto">
+                        <img src="./imagenPerfil/ibai.png" alt=""> 
+                    </div>
+        
+                    <div class="publicacion__header-opcion">
+                        <a>Ibai</a>
+                        <img src="./imagenesPublicacion/puntos.png" alt="">
+                    </div>   
+            </div>
+    
+            <div class="publicacion__img">
+                <img src="./imagenesPublicacion/publicacion.png" alt="">
+            </div>
+    
+            <div class="publicacion__opciones">
+                <div class="opcionesIzquiera">
+                    <img src="./imagenesPublicacion/corazon.png" alt="">
+                    <img src="./imagenesPublicacion/comentario.png" alt="">
+                    <img src="./imagenesPublicacion/mensajes.png" alt="">
+                </div>
+                <div class="opcionDerecha">
+                    <img src="./imagenesPublicacion/guardar.png" alt="">
+                </div>
+            </div>
+    
+            <div class="publicacion__likes"><span>500 likes</span></div>
+    
+            <div class="publicacion__comentarios">
+                <div class="comentarioDelAutor">
+                    <a class="comentarioDelAutor-user" href="">asdadas</a>
+                    <span>hola sii hola</span>
+                </div>
+    
+                <a class="comentarioDelAutor-view" href="">View all 20 comments</a>
+    
+                <div class="comentarioDeUsuarios">
+                    <div>
+                        <a href="">usuario1</a>
+                        <span>soy un comentario </span>
+                    </div>
+    
+                    <div>
+                        <a href="">usuario2</a>
+                        <span>otro comentario </span>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="publicacion__time">
+                <a href="">3 HOURS AGO</a>
+            </div>
+    
+            <div class="publicacion__footer">
+                <img src="./imagenesPublicacion/carita.png" alt="">
+                <input type="text" placeholder="Add a comment...">
+                <a href="">Post</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="publicacion">
+            <div class="publicacion__header">
+                <div class="publicacion__header-people">
+                    <div class="people-foto">
+                        <img src="./imagenPerfil/ibai.png" alt=""> 
+                    </div>
+        
+                    <div class="publicacion__header-opcion">
+                        <a>Ibai</a>
+                        <img src="./imagenesPublicacion/puntos.png" alt="">
+                    </div>   
+            </div>
+    
+            <div class="publicacion__img">
+                <img src="./imagenesPublicacion/publicacion.png" alt="">
+            </div>
+    
+            <div class="publicacion__opciones">
+                <div class="opcionesIzquiera">
+                    <img src="./imagenesPublicacion/corazon.png" alt="">
+                    <img src="./imagenesPublicacion/comentario.png" alt="">
+                    <img src="./imagenesPublicacion/mensajes.png" alt="">
+                </div>
+                <div class="opcionDerecha">
+                    <img src="./imagenesPublicacion/guardar.png" alt="">
+                </div>
+            </div>
+    
+            <div class="publicacion__likes"><span>500 likes</span></div>
+    
+            <div class="publicacion__comentarios">
+                <div class="comentarioDelAutor">
+                    <a class="comentarioDelAutor-user" href="">asdadas</a>
+                    <span>hola sii hola</span>
+                </div>
+    
+                <a class="comentarioDelAutor-view" href="">View all 20 comments</a>
+    
+                <div class="comentarioDeUsuarios">
+                    <div>
+                        <a href="">usuario1</a>
+                        <span>soy un comentario </span>
+                    </div>
+    
+                    <div>
+                        <a href="">usuario2</a>
+                        <span>otro comentario </span>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="publicacion__time">
+                <a href="">3 HOURS AGO</a>
+            </div>
+    
+            <div class="publicacion__footer">
+                <img src="./imagenesPublicacion/carita.png" alt="">
+                <input type="text" placeholder="Add a comment...">
+                <a href="">Post</a>
+            </div>
+            </div>
+        </div>
+
     </div>
+    
+
 </body>
 </html>
