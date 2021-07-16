@@ -7,11 +7,66 @@
     <title>Publicaciones IG</title>
 </head>
 <style>
+    body {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .publicacion__header-people {
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid #cccc;
+        width: 582px;
+        height: 27px;
+        padding: 16px;
+    }
+    .people-fotoYNombre {
+        display: flex;
+    }
+    .people-foto img{
+        border-radius: 50%;
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+    }
+    .publicacion__header-opcion{
+        width: 536px;
+        height: 26px;
+        margin-left: 14px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .publicacion__header-opcion a {
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: 600;
+        display: flex;
+        width: 26px;
+        height: 19px;
+    }
+    .publicacion__header-opcion a:hover {
+        text-decoration: underline;
+    }
+    .publicacion__header-opcion img{
+        cursor: pointer;
+
+    }
 
 </style>
 <body>
     <div class="publicacion">
-        <div class="publicacion__header"></div>
+        <div class="publicacion__header">
+            <div class="publicacion__header-people">
+                <div class="people-foto">
+                    <img src="./imagenPerfil/ibai.png" alt=""> 
+                </div>
+    
+                <div class="publicacion__header-opcion">
+                    <a>Ibai</a>
+                    <img src="./imagenesPublicacion/puntos.png" alt="">
+                </div>   
+        </div>
+
         <div class="publicacion__img"><img src="" alt=""></div>
         <div class="publicacion__opciones"></div>
         <div class="publicacion__likes"></div>
