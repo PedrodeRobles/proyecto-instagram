@@ -312,9 +312,10 @@ body {
 .people img {
     border-radius: 50%;
     cursor: pointer;
+    object-fit: cover;
     width: 32px;
     height: 32px;
-    object-fit: cover;
+    
 } 
 .people ul {
     list-style: none;
