@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lupa.css">
+    <title>Instagram</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 58px;
+    }
+    .fotosYVideos {
+        display: flex;
+        justify-content: center;
+        height: 614px;
+        padding: 30px 20px 28px 20px;
+    }
+    .fotos {
+        position: static;
+    }
+    .foto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* position: relative;           */
+    }
+    .foto img{
+        width: 293px;
+        height: 293px;
+        display: flex;
+        flex-direction: column;
+        object-fit: cover;
+        margin-right: 28px;
+        margin-bottom: 28px;
+    }
+    .fotosYVideos video {
+        width: 614px;
+        height: 614px;
+        object-fit: cover;
+        padding-right: 28px;
+    }
+    .soloFotos {
+        display: flex;
+        justify-content: center;
+    }
+    .soloFotos img {
+        width: 293px;
+        height: 293px;
+        object-fit: cover;
+        margin-right: 28px;
+        margin-bottom: 28px;
+    }
+    /* .fotosYVideos__details {
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: 150ms opacity;
+        padding: 10px;
+        position: absolute;                        
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 273px;
+        width: 273px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fotosYVideos__details img {
+        width: 20px;
+        height: 20px;
+        margin: 0px;
+    }
+    .fotosYVideos__details p{
+        color: white;
+        font-size: 18px;
+        margin-left: 5px;
+        margin-right: 7px;
+    }
+    .fotosYVideos__details:hover {
+        opacity: 1;
+    } */
+</style>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="./index.html"><img class="header__logo" src="./ImagenesHeader/logo.png" alt="Logo instagram"></a>
+            <input class="header__input" type="text" placeholder="Search">
+            <div class="header--opciones">
+                <a href="./index.html"><img class="header--opciones--casa" src="./ImagenesHeader/casa2.png" alt="casa"></a>
+                <a href=""><img class="header--opciones--mensajes" src="./ImagenesHeader/mensajes.png" alt="mensajes"></a>
+                <a href="./lupa.html"><img class="header--opciones--lupa" src="./ImagenesHeader/lupa2.png" alt="lupa"></a>
+                <a href=""><img class="header--opciones--corazon" src="./ImagenesHeader/corazon.png" alt="like"></a>
+                <a href=""><img class="header--opciones--user" src="./ImagenesHeader/user.png" alt="usuario"></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="fotosYVideos">
+            <div class="fotos">
+                <div class="foto">
+                    <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+                    <!-- <div class="fotosYVideos__details">
+                        <img src="./imagenesPublicacion/likes.png" alt="">
+                        <p>38.5K</p>
+                        <img src="./imagenesPublicacion/comentarios.png" alt="">
+                        <p>568</p>
+                    </div> -->
+                </div>
+
+                <div class="foto">
+                    <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+                    <!-- <div class="fotosYVideos__details">
+                        <img src="./imagenesPublicacion/likes.png" alt="">
+                        <p>38.5K</p>
+                        <img src="./imagenesPublicacion/comentarios.png" alt="">
+                        <p>568</p>
+                    </div> -->
+                    
+                </div>
+            </div>
+                
+
+                <video src="./videos/LSD - No New Friends (Official Video) ft. Labrinth, Sia, Diplo_360P.mp4" controls></video>
+        </div>
+
+        <div class="soloFotos">
+                <div class="foto">
+                    <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+                    <!-- <div class="fotosYVideos__details">
+                        <img src="./imagenesPublicacion/likes.png" alt="">
+                        <p>38.5K</p>
+                        <img src="./imagenesPublicacion/comentarios.png" alt="">
+                        <p>568</p>
+                    </div> -->
+                </div>
+                <div class="foto">
+                    <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+                    <!-- <div class="fotosYVideos__details">
+                        <img src="./imagenesPublicacion/likes.png" alt="">
+                        <p>38.5K</p>
+                        <img src="./imagenesPublicacion/comentarios.png" alt="">
+                        <p>568</p>
+                    </div> -->
+                </div>
+                <div class="foto">
+                    <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+                    <!-- <div class="fotosYVideos__details">
+                        <img src="./imagenesPublicacion/likes.png" alt="">
+                        <p>38.5K</p>
+                        <img src="./imagenesPublicacion/comentarios.png" alt="">
+                        <p>568</p>
+                    </div> -->
+                </div>
+                <!-- <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+                <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+                <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a> -->
+        </div>
+
+        <div class="soloFotos">
+            <div class="foto">
+                <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+                <!-- <div class="fotosYVideos__details">
+                    <img src="./imagenesPublicacion/likes.png" alt="">
+                    <p>38.5K</p>
+                    <img src="./imagenesPublicacion/comentarios.png" alt="">
+                    <p>568</p>
+                </div> -->
+            </div>
+            <div class="foto">
+                <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+                <!-- <div class="fotosYVideos__details">
+                    <img src="./imagenesPublicacion/likes.png" alt="">
+                    <p>38.5K</p>
+                    <img src="./imagenesPublicacion/comentarios.png" alt="">
+                    <p>568</p>
+                </div> -->
+            </div>
+            <div class="foto">
+                <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+                <!-- <div class="fotosYVideos__details">
+                    <img src="./imagenesPublicacion/likes.png" alt="">
+                    <p>38.5K</p>
+                    <img src="./imagenesPublicacion/comentarios.png" alt="">
+                    <p>568</p>
+                </div> -->
+            </div>
+            <!-- <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+            <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+            <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a> -->
+        </div>
+
+
+        <div class="fotosYVideos">
+            <video src="./videos/Major Lazer – Light it Up Remix (feat. Nyla & Fuse ODG) (Music Video) by Method Studios_360P.mp4" controls></video>
+
+            <div class="fotos">
+                <div class="foto">
+                    <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+                    <!-- <div class="fotosYVideos__details">
+                        <img src="./imagenesPublicacion/likes.png" alt="">
+                        <p>38.5K</p>
+                        <img src="./imagenesPublicacion/comentarios.png" alt="">
+                        <p>568</p>
+                    </div> -->
+                </div>
+
+                <div class="foto">
+                    <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+                    <!-- <div class="fotosYVideos__details">
+                        <img src="./imagenesPublicacion/likes.png" alt="">
+                        <p>38.5K</p>
+                        <img src="./imagenesPublicacion/comentarios.png" alt="">
+                        <p>568</p>
+                    </div> -->
+                    
+                </div>
+            </div>
+                
+        </div>
+
+        <div class="soloFotos">
+            <div class="foto">
+                <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+                <!-- <div class="fotosYVideos__details">
+                    <img src="./imagenesPublicacion/likes.png" alt="">
+                    <p>38.5K</p>
+                    <img src="./imagenesPublicacion/comentarios.png" alt="">
+                    <p>568</p>
+                </div> -->
+            </div>
+            <div class="foto">
+                <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+                <!-- <div class="fotosYVideos__details">
+                    <img src="./imagenesPublicacion/likes.png" alt="">
+                    <p>38.5K</p>
+                    <img src="./imagenesPublicacion/comentarios.png" alt="">
+                    <p>568</p>
+                </div> -->
+            </div>
+            <div class="foto">
+                <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+                <!-- <div class="fotosYVideos__details">
+                    <img src="./imagenesPublicacion/likes.png" alt="">
+                    <p>38.5K</p>
+                    <img src="./imagenesPublicacion/comentarios.png" alt="">
+                    <p>568</p>
+                </div> -->
+            </div>
+            <!-- <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+            <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+            <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a> -->
+        </div>
+
+        <div class="soloFotos">
+            <div class="foto">
+                <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+                <!-- <div class="fotosYVideos__details">
+                    <img src="./imagenesPublicacion/likes.png" alt="">
+                    <p>38.5K</p>
+                    <img src="./imagenesPublicacion/comentarios.png" alt="">
+                    <p>568</p>
+                </div> -->
+            </div>
+            <div class="foto">
+                <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+                <!-- <div class="fotosYVideos__details">
+                    <img src="./imagenesPublicacion/likes.png" alt="">
+                    <p>38.5K</p>
+                    <img src="./imagenesPublicacion/comentarios.png" alt="">
+                    <p>568</p>
+                </div> -->
+            </div>
+            <div class="foto">
+                <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+                <!-- <div class="fotosYVideos__details">
+                    <img src="./imagenesPublicacion/likes.png" alt="">
+                    <p>38.5K</p>
+                    <img src="./imagenesPublicacion/comentarios.png" alt="">
+                    <p>568</p>
+                </div> -->
+            </div>
+            <!-- <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+            <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a>
+            <a href=""><img src="./imagenesPublicacion/publicacion.png" alt=""></a> -->
+        </div>
+    </section>
+
+</body>
+</html>

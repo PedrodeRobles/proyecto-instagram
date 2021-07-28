@@ -17,13 +17,11 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 67%;
-    
 }
 .header__logo {
     width: 103px;
     height: 31px;
     padding-top: 10px;
-    
 }
 .header__input {
     background-color: #f3f3f3f5;
@@ -248,8 +246,7 @@ body {
 .suggestions {
     width: 293px;
     height: 502px;
-    padding-top: 55px;
-    padding-top: 106px;
+    margin-top: 106px;
     position: fixed;
     left: 886px;
 }
